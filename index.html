@@ -22,9 +22,10 @@
     </style>
 </head>
 <body>
-    <h1>Fetch GET, POST DELETE</h1>
+    <h1>MyPostHub</h1>
     <section id="data-container">
         <div class="create-post">
+            <p id="message">Create your posts and share them!</p>
             <label for="url-image">Enter the url of the image</label>
             <input type="text" placeholder="Url image" id="url-image">
 
@@ -38,7 +39,10 @@
             <button id="list-post">List Post</button>
         </div>
         <div class="list-post">
-            <h1>Posts</h1>
+            <h4>Discover all posts!</h4>
+            <button id="go-create-post">Create post</button>
+            <p id="results"></p>
+            <div id="render-posts"></div>
         </div>
     </section>
 
