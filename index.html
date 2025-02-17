@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API Methods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #data-container {
+            margin-top: 20px;
+        }
+        .item {
+            margin-bottom: 10px;
+        }
+        img {
+            max-width: 300px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fetch GET, POST DELETE</h1>
+    <section id="data-container">
+        <div class="create-post">
+            <label for="url-image">Enter the url of the image</label>
+            <input type="text" placeholder="Url image" id="url-image">
+
+            <label for="title">Write the title of the post</label>
+            <input type="text" placeholder="Title" id="title">
+
+            <label for="description">Write the description of the post</label>
+            <input type="text" placeholder="Description" id="description">
+
+            <button id="create">Create Post</button>
+            <button id="list-post">List Post</button>
+        </div>
+        <div class="list-post">
+            <h1>Posts</h1>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+    <script src="listPost.js"></script>
+</body>
+</html>
