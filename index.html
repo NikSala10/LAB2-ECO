@@ -4,42 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fetch API Methods</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        #data-container {
-            margin-top: 20px;
-        }
-        .item {
-            margin-bottom: 10px;
-        }
-        img {
-            max-width: 300px;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>MyPostHub</h1>
     <section id="data-container">
         <div class="create-post">
-            <p id="message">Create your posts and share them!</p>
-            <label for="url-image">Enter the url of the image</label>
-            <input type="text" placeholder="Url image" id="url-image">
-
-            <label for="title">Write the title of the post</label>
-            <input type="text" placeholder="Title" id="title">
-
-            <label for="description">Write the description of the post</label>
-            <input type="text" placeholder="Description" id="description">
-
+            <h4 id="message">Create your posts and share them!</h4>
+            <div class="input">
+                <label for="url-image" class="text">Enter the url of the image</label>
+                <input type="text" placeholder="Url image" id="url-image" name="input" class="input">
+            </div>
+            <div class="input">
+                <label for="title" class="text">Write the title of the post</label>
+                <input type="text" placeholder="Title" id="title" name="input" class="input">
+            </div>
+            <div class="input">
+                <label for="description" class="text">Write the description of the post</label>
+                <input type="text" placeholder="Description" id="description" name="input" class="input">
+            </div>
             <button id="create">Create Post</button>
             <button id="list-post">List Post</button>
         </div>
         <div class="list-post">
-            <h4>Discover all posts!</h4>
+            <h4 id="message2">Discover all posts!</h4>
             <button id="go-create-post">Create post</button>
             <p id="results"></p>
             <div id="render-posts"></div>

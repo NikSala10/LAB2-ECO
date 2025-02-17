@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+#message, #message2 {
+    color: #2f43ff;
+    text-align: center;
+}
+.create-post {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+h1 {
+    text-align: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: static;
+    max-width: 340px;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .input label.text {
+    font-size: 15px;
+    color: #818CF8;
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 7px;
+    padding: 0 3px;
+    background: #ffffff;
+    width: fit-content;
+  }
+  
+  .input input[type=text].input {
+    padding: 20px 25px;
+    font-size: 12px;
+    font-style: italic;
+    border: 2px #818CF8 solid;
+    border-radius: 5px;
+    background: #ffffff;
+  }
+  
+  .input input[type=text].input:focus {
+    outline: none;
+  }
+  #create, #go-create-post  {
+    background-color: #818CF8;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 10em;
+    border-radius: 1rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+   }
+   
+   #create:hover, #go-create-post:hover:not(:disabled) {
+    background: #6d7bfc;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+   }
+   
+   #create:disabled, #go-create-post:disabled {
+    cursor: auto;
+   }
+
+   #go-create-post {
+    margin-left: 85%;
+    margin-bottom: 3rem;
+   }
+   #list-post {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    margin-top: 1rem;
+   }
+   
+   #list-post:disabled {
+    pointer-events: none;
+   }
+   
+   #list-post:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+   
+   #list-post:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+   #render-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+   }
+   .card-post {
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    box-shadow: 0 4px 8px rgba(129, 140, 248, 0.1),
+                0 2px 4px rgba(129, 140, 248, 0.06); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   }
+   .delete {
+    background-color: #8b96f6;  
+    color: white;              
+    border: none;               
+    padding: 10px 20px;        
+    font-size: 16px;            
+    font-weight: bold;         
+    border-radius: 1rem;        
+    cursor: pointer;          
+    transition: background-color 0.3s ease, transform 0.3s ease;  
+}
+
+    .delete:hover {
+    background-color: #6d7bfc;  
+    transform: translateY(-2px); 
+}
