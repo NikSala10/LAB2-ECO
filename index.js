@@ -34,6 +34,9 @@ async function fetchCreateNewPost() {
     }
 
     alert('Post creado con éxito');
+    urlImagInput.value = "";
+    titleInput.value = "";
+    descriptionInput.value = "";
 
   } catch (error) {
     console.error('Error al crear el post:', error.message);
